@@ -15,7 +15,7 @@ void setup()
   delay(5000); // Allow board to settle
   Blynk.begin(auth);
   pinMode(D4, INPUT);
-  pinMode(D0, OUTPUT);
+  pinMode(D7, OUTPUT);
 }
 
 void loop()
@@ -24,11 +24,11 @@ void loop()
   Blynk.run();
   if (onoff)
   {
-      digitalWrite(D0, HIGH);
+      digitalWrite(D7, HIGH);
   }
   else
   {
-      digitalWrite(D0, LOW);
+      digitalWrite(D7, LOW);
   }
 
 }
